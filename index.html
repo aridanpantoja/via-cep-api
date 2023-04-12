@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaCEP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="card">
+
+        <div class="card__cep">
+            <img  class="imagem" src="./images/Mail sent-bro.png" alt="Pacote">
+            <h1 class="titulo">Digite seu CEP</h1>
+            <input type="number" class="input" id="cep">
+            <div class="erro" id="erro"></div>
+        </div>
+
+        <div class="card__informacoes">
+            <div class="input__field input__field--endereco">
+                <label for="endereco" class="label">Endereço</label>
+                <input type="text" class="input" id="endereco" readonly>
+            </div>
+            <div class="input__field input__field--bairro">
+                <label for="bairro" class="label">Bairro</label>
+                <input type="text" class="input" id="bairro" readonly>
+            </div>
+            <div class="input__field input__field--complemento">
+                <label for="complemento" class="label">Complemento</label>
+                <input type="text" class="input" id="complemento" readonly>
+            </div>
+            <div class="input__field input__field--cidade">
+                <label for="cidade" class="label">Cidade</label>
+                <input type="text" class="input" id="cidade" readonly>
+            </div>
+            <div class="input__field input__field--estado">
+                <label for="estado" class="label">Estado</label>
+                <input type="text" class="input" id="estado" readonly>
+            </div>
+        </div>
+
+    </main>
+    <script src="./app/main.js"></script>
+</body>
+</html>
