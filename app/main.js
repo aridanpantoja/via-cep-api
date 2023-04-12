@@ -16,7 +16,12 @@ async function buscaEndereco(cep) {
         console.log(consulta)
 
     } catch (erro) {
-        mensagemError.innerHTML = '<p>CEP inválido! Tente novamente' 
+        mensagemError.innerHTML = '<p>CEP inválido! Tente novamente'
+        endereco.value = "";
+        cidade.value = "";
+        estado.value = "";
+        complemento.value = "";
+        bairro.value = "";
     }
 }   
 
